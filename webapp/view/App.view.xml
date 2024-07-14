@@ -2,10 +2,12 @@
     xmlns="sap.m"
     xmlns:t="sap.ui.table"
     xmlns:mvc="sap.ui.core.mvc"
+    controllerName="freestyledozerov01.controller.App"
     >
     
     <Text text="Ola mundo pela View"/>
-
+    <Button id="botao" text="Me clica de novo" press="onClique">
+    </Button>
 	<VBox class="sapUiSmallMargin">
 		<Label text="Default RadioButton use" labelFor="GroupA" />
 		<RadioButtonGroup id="GroupA">

@@ -11,10 +11,33 @@ sap.ui.define([
     // ----------------------------------------------------------------
     return meuController.extend("freestyledozerov01.controller.App", {
         //////////////////// ini metodos customizados (meus)
-        onInit: function() {
+
+
+        ///INITIALIZATION
+        onInit: function(){
+            //alert("on init");
             // Modificar o texto do botão da VEIW
             this.byId("botao").setText("Novo Texto pelo oninit(), mas, me clica !");
         },
+
+        //MODULE PBO - AT SELECTION SCREEN OUTPUT
+        onBeforeRendering: function(){
+            //alert("onBeforeRendering");
+            //uso comum: buscar dados do serviço odata no backend
+        },
+        
+        //MODULE PAI - AT SELECTION SCREEN
+        onAfterRendering: function(){
+            //alert("onAfterRendering");
+            //uso comum: validar dados e alterar UI de acordo com dados
+        },
+
+        //AT EXIT COMMAND       
+        onExit: function(){
+            alert("on Exit");
+            //uso comum: limpar variaveis ao sair dessa view
+        },
+
         onClique: function() {
             // alert("ola pelo controller!");	
             minhaMessageToast.show("Ola pessoal no onClique()")

@@ -4,14 +4,22 @@ sap.ui.define([
     'use strict';
     
     return meuUIComponent.extend("freestyledozerov01.Component",{
+        
+        //----------------------------------------------------------------
+        //Agora chamamos o manifest,
+        //porque indicaremos as rotas e Views chamadas nele.
+        //-----------------------------------------------------------------
         metadata: {
-            rootView: {
-                "viewName": "freestyledozerov01.view.App",
-                "type": "XML",
-                "async": true,
-                "id": "app"
-            }
+            manifest: "json"
         },
+        // metadata: {
+        //     rootView: {
+        //         "viewName": "freestyledozerov01.view.App",
+        //         "type": "XML",
+        //         "async": true,
+        //         "id": "app"
+        //     }
+        // },
 
         /////INITIALIZATION
         init: function() {
@@ -21,7 +29,7 @@ sap.ui.define([
 
         }
 
-        
+
         ///////////implementação customizada
 
         //////////////////////////

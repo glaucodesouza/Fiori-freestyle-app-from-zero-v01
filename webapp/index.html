@@ -12,10 +12,24 @@
         data-sap-ui-resourceroots='{
             "freestyledozerov01": "./"
         }'
-        data-sap-ui-oninit="module:freestyledozerov01/index"
+        data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
     ></script>
 </head>
-<body id="contentDoIndex">
+
+<body id="contentDoIndex" class="sapUiBody">
     <p>Ola sapui5 no Index.html !</p>
+    <!-- 
+        ----------------------------------------------------------------
+        Agora chamaremos o Component.js 
+        Pois o index.js nao sera mais necessario
+        ----------------------------------------------------------------
+    -->
+    <div
+        data-sap-ui-component data-name="freestyledozerov01" 
+        data-id="container" 
+        data-settings='{"id" : "template"}'
+    >
+
+    </div>
 </body>
 </html>

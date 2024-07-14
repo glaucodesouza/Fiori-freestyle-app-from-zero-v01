@@ -16,10 +16,12 @@ sap.ui.define([
     //     oView.placeAt("contentDoIndex");
     // });
 
+    //informar ao meu Callback,
+    //que deve iniciar o meu Component.js
     new meuComponentContainer({
         name: 'freestyledozerov01',
         settings: {
-            id: 'template'
+            id: 'template' //id da aplicacao
         },
         async: true
     }).placeAt('contentDoIndex');

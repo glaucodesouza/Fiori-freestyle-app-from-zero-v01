@@ -1,33 +1,26 @@
 sap.ui.define([
-    // "sap/m/Text",
-    // "sap/m/Button"	
-    "sap/ui/core/mvc/XMLView"
+    // "sap/ui/core/mvc/XMLView"
+    "sap/ui/core/ComponentContainer"
 
 ], function(
-    // Text, 
-    // Button
-    XMLView
+    // XMLView
+    meuComponentContainer
 ) {
     'use strict';
     
     // alert('Alo dentro do index.js !');
-
-    // new sap.m.Text({
-    //     text: 'Alo mundo pelo index.js!'
-    // }).placeAt("contentDoIndex");
-
-    // new Button({
-    //     text: "Me clica"
-    // }).placeAt("contentDoIndex");
-
-    // new Button({
-    //     text: "Nao me clica"
-    // }).placeAt("contentDoIndex");
     
-    XMLView.create({
-        viewName: "freestyledozerov01.view.App"
-    }).then(function (oView) {
-        oView.placeAt("contentDoIndex");
-    });
+    // XMLView.create({
+    //     viewName: "freestyledozerov01.view.App"
+    // }).then(function (oView) {
+    //     oView.placeAt("contentDoIndex");
+    // });
 
+    new meuComponentContainer({
+        name: 'freestyledozerov01',
+        settings: {
+            id: 'template'
+        },
+        async: true
+    }).placeAt('contentDoIndex');
 });

@@ -1,3 +1,7 @@
 # Fiori App from zero
-## requires mongoose.exe 
-to run inside webapp folder for local testing
+Simple freestyle App  
+Written line by line, file by file  
+Does not have OData services  
+
+## requires Live Server extension 
+To test this App, click inside the file index.html and choose Open with Live Server.
